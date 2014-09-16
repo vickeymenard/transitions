@@ -12,7 +12,9 @@ img{
 	width: 50%;
 	position: relative;
 	overflow: hidden;
+	-webkit-animation: slide-up 2000ms linear;
 	animation: slide-up 2000ms linear;
+	/* can write inifite if your want animation to repeat.*/
 }
 
 .card__text{
@@ -32,6 +34,19 @@ img{
 	opacity: 1;
 }
 
+
+@-webkit-keyframes slide-up {
+
+	0% {
+		top: 10em;
+	}
+
+	100% {
+		top: 0;
+	}
+
+}
+
 @keyframes slide-up {
 
 	0% {
@@ -43,3 +58,5 @@ img{
 	}
 
 }
+
+
