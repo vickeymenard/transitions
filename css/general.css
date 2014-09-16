@@ -1,0 +1,36 @@
+.btn,
+.btn:link,
+.btn:visited{
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	border-radius: 6px;
+	background-color: #f33;
+	color: #fff;
+	text-decoration: none;
+	font-size: 3em;
+	/*
+	transition: which-property duration timing-function;
+	Transition should always be specified in the default
+	state so when a user action is triggers the transition is ready
+
+	timing-function can be: linear, ease-in, ease-out, ease-in-out;
+	*/
+	transition:
+		background-color 1000ms linear,
+		border-radius 2000ms;
+
+	/* You can use 'all' instead of a property to make the transition
+	happen for any properties that change
+	*/
+
+	transition: all 250ms linear;
+}
+
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: #000;
+	border-radius: 25px;
+}
+
