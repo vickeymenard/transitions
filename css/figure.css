@@ -12,6 +12,7 @@ img{
 	width: 50%;
 	position: relative;
 	overflow: hidden;
+	animation: slide-up 2000ms linear;
 }
 
 .card__text{
@@ -29,4 +30,16 @@ img{
 .card:hover .card__text{
 	bottom: 0;
 	opacity: 1;
+}
+
+@keyframes slide-up {
+
+	0% {
+		top: 10em;
+	}
+
+	100% {
+		top: 0;
+	}
+
 }
